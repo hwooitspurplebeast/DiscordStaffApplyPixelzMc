@@ -1,0 +1,48 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #292b3a; /* Dark bluish background */
+    color: #fff; /* White text */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #39425e; /* Slightly lighter bluish container background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Darker shadow */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+    color: #fff; /* White label text */
+}
+
+input, textarea {
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #536479; /* Lighter bluish border */
+    border-radius: 4px;
+    background-color: #353b52; /* Darker bluish input background */
+    color: #fff; /* White text */
+}
+
+button {
+    background-color: #536479; /* Lighter bluish button background */
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #39425e; /* Slightly darker bluish on hover */
+  }
