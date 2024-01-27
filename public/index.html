@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Discord Staff Application</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Discord Staff Application</h2>
+        <form id="staffApplicationForm" action="/submit-application" method="post">
+            <label for="username">Discord Username (format: Username#1234):</label>
+            <input type="text" minlength="3" value="#0000" id="username" name="username" pattern="^[a-zA-Z0-9]+#[0-9]{4}$" required
+                   title="Please enter a valid Discord username in the format Username#1234">
+
+            <label for="experience">Tell us about your previous moderation or staff experience, if its your first time what do you think what moderation is? what is trust?(minimum 100 words):</label>
+            <textarea id="experience" name="experience" rows="6" minlength="50" required></textarea>
+
+            <label for="timezone">In which time zone are you located?</label>
+            <select id="timezone" name="timezone" required>
+                <option value="UTC">UTC</option>
+                <option value="GMT">GMT</option>
+                <option value="Others">EST</option>
+            </select>
+          <label for="age">What is your age? (If above 24 we need proof)</label>
+          <input type="number" id="age" name="age" required min="14">
+
+            <label for="availability">Describe your availability and preferred working hours (atleast 50 words):</label>
+            <textarea id="availability" name="availability" rows="6" minlength="50" required></textarea>
+
+            <label for="strengths">What do you consider to be your strengths as a moderator (atleast 50 words)?</label>
+            <textarea id="strengths" name="strengths" rows="6" minlength="50" required></textarea>
+
+            <label for="challenges">How do you handle challenging situations or conflicts within the community (atleast 50 words)?</label>
+            <textarea id="challenges" name="challenges" rows="6" minlength="50" required></textarea>
+
+            <label>
+                <input type="checkbox" id="confirmCheckbox" required>
+                I accept that the information I provided is correct. Also i will not break discord TOS
+            </label>
+
+            <button type="submit">Submit Application</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+  </html>
+              
